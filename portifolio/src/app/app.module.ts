@@ -1,24 +1,29 @@
 
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 
 import { routes } from './app.routes';
 import { AppComponent } from './app.component';
-import { HomeModuleModule } from './components/home/home.module';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { HomeModule } from './components/home/home.module';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    CommonModule
   ],
   imports: [
     BrowserModule,    
-    routes,
-    HomeModuleModule
+    HomeModule,
+    routes
   ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA]
+  
 })
-export class HomeModule { }
+export class AppModule { }
  

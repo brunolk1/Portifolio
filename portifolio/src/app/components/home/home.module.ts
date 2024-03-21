@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
 
 import { HomeComponent } from './home.component';
 import { HeaderComponent } from '../../shared/header/header.component';
@@ -14,10 +13,15 @@ import { BtnPrimaryComponent } from '../../shared/btn-primary/btn-primary.compon
   ],
   imports: [
     BrowserModule,
-    CommonModule
+    
   ],
   providers: [],
-  bootstrap: []
+  bootstrap: [],
+  exports: [
+    HomeComponent,
+  
+  ]
+  
 })
-export class HomeModuleModule { }
+export class HomeModule { }
  

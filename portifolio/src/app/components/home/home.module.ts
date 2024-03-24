@@ -13,13 +13,14 @@ import { BtnPrimaryComponent } from '../../shared/btn-primary/btn-primary.compon
   ],
   imports: [
     BrowserModule,
-    
+
   ],
   providers: [],
   bootstrap: [],
   exports: [
     HomeComponent,
-  
+    HeaderComponent,
+    BtnPrimaryComponent
   ]
   
 })

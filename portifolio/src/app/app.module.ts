@@ -5,12 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './components/home/home.module';
 import { MainSectionComponent } from './shared/main-section/main-section.component';
+import { MainAnimationComponent } from './shared/main-animation/main-animation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainSectionComponent,
-    
   ],
   imports: [
     BrowserModule,

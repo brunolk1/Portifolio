@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './components/home/home.module';
 import { MainSectionComponent } from './shared/main-section/main-section.component';
 import { MainAnimationComponent } from './shared/main-animation/main-animation.component';
+import { MainSectionProjectsComponent } from './shared/main-section.projects/main-section.projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MainSectionProjectsComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { BtnPrimaryComponent } from '../../shared/btn-primary/btn-primary.compon
 import { MainSectionComponent } from 'app/shared/main-section/main-section.component';
 import { MainAnimationComponent } from 'app/shared/main-animation/main-animation.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MainSectionProjectsComponent } from 'app/shared/main-section.projects/main-section.projects.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    MainSectionProjectsComponent
+    
   ],
   providers: [
     provideClientHydration()

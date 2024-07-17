@@ -3,7 +3,7 @@ import { GithubService } from 'app/services/github.service';
 import { Repository } from 'app/types/respository.interface';
 
 @Component({
-  selector: 'app-main-section.projects',
+  selector: 'app-main-section-projects',
   templateUrl: './main-section.projects.component.html',
   styleUrl: './main-section.projects.component.scss'
 })

@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
   constructor(private githubService: GithubService) {}
 
   ngOnInit(): void {
-    this.githubService.getRepos().subscribe({
-      next: (response) => console.log(response)
-    })
+    // this.githubService.getRepos().subscribe({
+    //   next: (response) => console.log(response)
+    // })
   }
 }

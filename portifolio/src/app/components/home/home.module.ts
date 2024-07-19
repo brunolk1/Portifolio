@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -17,12 +18,13 @@ import { MainSectionProjectsComponent } from 'app/shared/main-section.projects/m
     HeaderComponent,
     BtnPrimaryComponent,
     MainSectionComponent,
-    MainAnimationComponent
+    MainAnimationComponent,
+    MainSectionProjectsComponent,
   ],
   imports: [
-    BrowserModule,
+    // BrowserModule,
+    CommonModule,
     HttpClientModule,
-    MainSectionProjectsComponent
     
   ],
   providers: [
@@ -31,6 +33,11 @@ import { MainSectionProjectsComponent } from 'app/shared/main-section.projects/m
   bootstrap: [],
   exports: [
     HomeComponent,
+    HeaderComponent,
+    BtnPrimaryComponent,
+    MainSectionComponent,
+    MainAnimationComponent,
+    MainSectionProjectsComponent,
   ]
 })
 export class HomeModule { }

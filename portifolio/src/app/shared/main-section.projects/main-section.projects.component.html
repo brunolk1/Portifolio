@@ -1,4 +1,25 @@
-<h1 class="nomeRepositorio">{{repositoryList.name}}</h1>
-<p class="nomeRepositorio">{{repositoryList.description}}</p>
-<div class="nomeRepositorio">{{repositoryList.languages_url}}</div>
-<span class="nomeRepositorio">{{repositoryList.html_url}}</span>
+<!--<h1 class="nomeRepositorio">{{repositoryList[11].name}}</h1>
+<p class="nomeRepositorio">{{repositoryList[11].description}}</p>
+<div class="nomeRepositorio">{{repositoryList[11].languages_url}}</div>
+<span class="nomeRepositorio">{{repositoryList[11].html_url}}</span>
+
+
+<h1 class="nomeRepositorio">{{repositoryList[10].name}}</h1>
+<p class="nomeRepositorio">{{repositoryList[10].description}}</p>
+<div class="nomeRepositorio">{{repositoryList[10].languages_url}}</div>
+<span class="nomeRepositorio">{{repositoryList[10].html_url}}</span>
+
+<h1 class="nomeRepositorio">{{repositoryList[12].name}}</h1>
+<p class="nomeRepositorio">{{repositoryList[12].description}}</p>
+<div class="nomeRepositorio">{{repositoryList[12].languages_url}}</div>
+<span class="nomeRepositorio">{{repositoryList[12].html_url}}</span>
+-->
+
+<div class="projetos" *ngIf="repositoryList.length > 0">
+    <h2>{{repositoryList[0].name}}</h2>
+    <p>{{repositoryList[0].description}}</p>
+    <p>{{repositoryList[0].html_url}}</p>
+    <p>{{repositoryList[0].languages_url}}</p>
+
+</div>
+

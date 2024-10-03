@@ -13,7 +13,7 @@ import { map, OperatorFunction, pipe } from 'rxjs';
 })
 export class MainSectionProjectsComponent {
 
-  repositoryList: Repository[] = [] 
+  /*repositoryList: Repository[] = [] 
   
 
   constructor(private readonly reposGitHub: GithubService) {}
@@ -33,11 +33,11 @@ export class MainSectionProjectsComponent {
       )*/
     
       
-    })
+ /*   })
     
   }
   ngOnInit(): void {
     this.getRepository()
   }
 
-}
+}*/}

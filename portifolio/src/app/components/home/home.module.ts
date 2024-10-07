@@ -11,6 +11,9 @@ import { MainSectionComponent } from 'app/shared/main-section/main-section.compo
 import { MainAnimationComponent } from 'app/shared/main-animation/main-animation.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainSectionProjectsComponent } from 'app/shared/main-section.projects/main-section.projects.component';
+import { ContactComponent } from 'app/shared/contact/contact.component';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { MainSectionProjectsComponent } from 'app/shared/main-section.projects/m
     MainSectionComponent,
     MainAnimationComponent,
     MainSectionProjectsComponent,
-  ],
+    ContactComponent
+    
+    ],
   imports: [
     // BrowserModule,
     CommonModule,
@@ -38,6 +43,7 @@ import { MainSectionProjectsComponent } from 'app/shared/main-section.projects/m
     MainSectionComponent,
     MainAnimationComponent,
     MainSectionProjectsComponent,
+    
   ]
 })
 export class HomeModule { }
